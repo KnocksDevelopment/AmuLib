@@ -27,14 +27,6 @@
                     <target>${jdk.version}</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <tagBase>http://mks:8080/svn/jrepo/tags/Frameworks/SiestaFramework</tagBase>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>
