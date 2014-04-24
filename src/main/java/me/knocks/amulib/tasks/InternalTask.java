@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * An internal method @interface specifically designed for internal tasks to be able to handle objects easily.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 public @interface InternalTask {
-    Class<?> getType();
+    Class<?> type();
 }

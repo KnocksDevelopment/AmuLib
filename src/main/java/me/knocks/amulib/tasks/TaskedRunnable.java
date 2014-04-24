@@ -33,7 +33,7 @@ public class TaskedRunnable implements Runnable {
             InternalTask itask = m.getAnnotation(InternalTask.class);
             if (itask == null)
                 continue;
-            Class<?> handledClass = itask.getType();
+            Class<?> handledClass = itask.type();
             if (handledClass == null)
                 continue;
             if (m.getTypeParameters().length > 1 || m.getTypeParameters().length < 1)
